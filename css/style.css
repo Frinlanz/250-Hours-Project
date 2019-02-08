@@ -33,8 +33,9 @@ img.clouds5{
   bottom:0px;
 }
 img.balloon{
-  margin: 77px 145px;
-  position: absolute;
+  top: 77px;
+  left: 145px;;
+  position: relative;
   
 }
 h3, h1, p{
@@ -53,16 +54,15 @@ h1{
   color: white;
   size: 62px;
   font-size: 72px;
-  padding-top:170px;
+  top: 40px;
+  padding-top: 50px;
  
 }
-p{
+span.para{
   line-height: 600%;
   color: #037297;
   padding-top: 0%;
+  font-size:14px;
 }
 
-.content{
-  position: relative;
-}
 

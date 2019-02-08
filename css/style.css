@@ -8,6 +8,7 @@
   margin:50px auto;
   background-image: linear-gradient(to bottom, #2ea8cf, #4bb5d7, #63c3df, #79d0e7, #8fdeef);
   position: relative;
+  overflow: hidden;
 }
 
 img{
@@ -16,27 +17,35 @@ img{
 img.clouds1{
   top:32px;
   right: 75px;
+  animation: cloud1 10s infinite
 }
 img.clouds2{
   top:77px;
   left: 40px;
+  animation: cloud2 10s infinite;
 }
 img.clouds3{
   bottom:221px;
   left: 30px;
+  animation: cloud3 10s infinite;
 }
 img.clouds4{
   top:165px;
   right: 35px;
+  animation: cloud4 10s infinite
 }
 img.clouds5{
   bottom:0px;
+  width: 550px;
+  animation: cloud5 10s infinite;
+  z-index: 2;
+  left: -50px;
 }
 img.balloon{
-  top: 77px;
+  top: 70px;
   left: 145px;;
   position: relative;
-  
+  z-index: 1;
 }
 h1{
   text-align: center;
@@ -69,4 +78,94 @@ line-height: 40%;
 span{
   display: block;
 }
-
+.content{
+  margin-top: 0px;
+  animation:balloons 3s;
+}
+@keyframes balloons{
+ from{
+   margin-top: 350px;
+ }
+ to{
+   margin-top: 0px;
+ }
+}
+@keyframes cloud5{
+  0%{
+    left: -50px;
+  }
+  50%{
+    left: 0px;
+  }
+  100%{
+    left: -50;
+  }
+}
+@keyframes cloud1{
+  0%{
+    right: 75px;
+  }
+  50%{
+    right: 0px;
+  }
+  100%{
+    right: 75px;
+  }
+}
+@keyframes cloud2{
+  0%{
+    left: 40px;
+  }
+  30%{
+    left: 100px;
+  }
+  45%{
+    left: 40px;
+  }
+  70%{
+    left: 0px;
+  }
+  100%{
+    left: 40px;
+  }
+}
+@keyframes cloud3{
+  0%{
+    left: 30px;
+  }
+  25%{
+    left: 90px;
+  }
+  50%{
+    left: 30px;
+  }
+  75%{
+    left: 0px;
+  }
+  100%{
+    left: 30px;
+  }
+}
+@keyframes cloud4{
+  0%{
+    right: 35px;
+  }
+  15%{
+    right: 65px;
+  }
+  30%{
+    right: 35px;
+  }
+  45%{
+    right: 10px;
+  }
+  60%{
+    right: 0px;
+  }
+  85%{
+    right: 10px;
+  }
+  100%{
+    right: 35px;
+  }
+}

@@ -80,11 +80,11 @@ span{
 }
 .content{
   margin-top: 0px;
-  animation:balloons 5s;
+  animation:balloons 3s;
 }
 @keyframes balloons{
  from{
-   margin-top: 450px;
+   margin-top: 350px;
  }
  to{
    margin-top: 0px;
@@ -103,13 +103,13 @@ span{
 }
 @keyframes cloud1{
   0%{
-    right: 75px
+    right: 75px;
   }
   50%{
-    right: 0px
+    right: 0px;
   }
   100%{
-    right: 75px
+    right: 75px;
   }
 }
 @keyframes cloud2{

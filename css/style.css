@@ -38,31 +38,35 @@ img.balloon{
   position: relative;
   
 }
-h3, h1, p{
+h1{
   text-align: center;
   font-family: 'Righteous', cursive;
  
   
 }
-h3{
+.error{
 color: white;
 font-size: 42px;
 padding-top:0px;
 line-height: 40%;
+
 }
-h1{
+.four{
   color: white;
   size: 62px;
   font-size: 72px;
   top: 40px;
   padding-top: 50px;
+
  
 }
-span.para{
+.para{
   line-height: 600%;
   color: #037297;
   padding-top: 0%;
   font-size:14px;
 }
-
+span{
+  display: block;
+}
 
